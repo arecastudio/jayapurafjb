@@ -1,1 +1,6 @@
 # jayapurafjb
+.idea/
+.gradle/
+*.iml
+build/
+local.properties
