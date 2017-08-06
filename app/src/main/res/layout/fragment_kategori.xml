@@ -1,0 +1,49 @@
+<!--FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="io.github.arecastudio.jayapurafjb.fragements.Kategori">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Ini adalah fragment kategori" />
+
+</FrameLayout-->
+<io.github.arecastudio.jayapurafjb.dashboards.DashboardLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:background="#99000000">
+
+    <!--  Tombol Berita -->
+    <Button
+        android:id="@+id/btn_pelanggan"
+        style="@style/DashboardButton"
+        android:drawableTop="@mipmap/ic_launcher_round"
+        android:text="Pelanggan" />
+
+    <!--  Tombol Teman -->
+    <Button
+        android:id="@+id/btn_pencarian"
+        style="@style/DashboardButton"
+        android:drawableTop="@mipmap/ic_launcher_round"
+        android:text="Pencarian" />
+
+    <!--  Tombol Pesan -->
+    <Button
+        android:id="@+id/btn_download"
+        style="@style/DashboardButton"
+        android:drawableTop="@mipmap/ic_launcher_round"
+        android:text="Download" />
+
+    <!--  Tombol Tempat -->
+    <Button
+        android:id="@+id/btn_upload"
+        style="@style/DashboardButton"
+        android:drawableTop="@mipmap/ic_launcher_round"
+        android:text="Upload" />
+
+
+</io.github.arecastudio.jayapurafjb.dashboards.DashboardLayout>
