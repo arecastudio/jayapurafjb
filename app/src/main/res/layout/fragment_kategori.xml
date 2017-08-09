@@ -5,14 +5,12 @@
     tools:context="io.github.arecastudio.jayapurafjb.fragments.Kategori">
 
     <!-- TODO: Update blank fragment layout -->
-    <LinearLayout
+    <GridView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Ini Kategori"/>
-    </LinearLayout>
+        android:id="@+id/gridView"
+        android:columnWidth="150dp"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth"/>
 
 </FrameLayout>
