@@ -83,16 +83,14 @@ public class Main extends AppCompatActivity
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
-        int id = item.getItemId();
+        /*int id = item.getItemId();
 
         if (id == R.id.nav_produk) {
             // Handle the camera action
             this.setTitle("Terbaru");
         } else if (id == R.id.nav_kategori) {
             this.setTitle("Kategori");
-            Fragment fragment = new Kategori();
-            FragmentManager fm = getSupportFragmentManager();
-            FragmentTransaction transaction = fm.beginTransaction();
+
             transaction.replace(R.id.contentFragment, fragment);
             transaction.commit();
         } else if (id == R.id.nav_cari) {
@@ -103,6 +101,28 @@ public class Main extends AppCompatActivity
 
         } else if (id == R.id.nav_send) {
 
+        }*/
+
+        Fragment fragment = new Kategori();
+        FragmentManager fm = getSupportFragmentManager();
+        FragmentTransaction transaction = fm.beginTransaction();
+
+        switch (item.getItemId()){
+            case R.id.nav_produk:
+                this.setTitle("Terbaru");
+                break;
+            case R.id.nav_kategori:
+                this.setTitle("Kategori");
+                transaction.replace(R.id.contentFragment, fragment);
+                transaction.commit();
+                break;
+            case R.id.nav_cari:
+                this.setTitle("Pencarian");
+                break;
+            case R.id.nav_favorit:
+                this.setTitle("Favorit");
+                break;
+            default:
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
