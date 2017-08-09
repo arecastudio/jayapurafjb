@@ -85,19 +85,20 @@ public class Main extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
+        if (id == R.id.nav_produk) {
             // Handle the camera action
-
-        } else if (id == R.id.nav_gallery) {
+            this.setTitle("Terbaru");
+        } else if (id == R.id.nav_kategori) {
+            this.setTitle("Kategori");
             Fragment fragment = new Kategori();
             FragmentManager fm = getSupportFragmentManager();
             FragmentTransaction transaction = fm.beginTransaction();
             transaction.replace(R.id.contentFragment, fragment);
             transaction.commit();
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-
+        } else if (id == R.id.nav_cari) {
+            this.setTitle("Pencarian");
+        } else if (id == R.id.nav_favorit) {
+            this.setTitle("Favorit");
         } else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {
